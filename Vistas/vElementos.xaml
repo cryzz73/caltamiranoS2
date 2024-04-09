@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="caltamiranoS2.Vistas.vElementos"
+            >
+    <VerticalStackLayout>
+        <Label 
+            Text="Elementos Visuales MAUI"
+            TextColor="Blue"
+            FontSize="24"
+            HorizontalTextAlignment="Center" 
+            />
+        <Picker
+            x:Name="pkCiudad"
+            Title="CIUDADES">
+            <Picker.Items>
+                <x:String>QUITO</x:String>
+                <x:String>GUAYAQUIL</x:String>
+                <x:String>MANTA</x:String>
+                <x:String>CUENCA</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button
+            x:Name="btnPicker"
+            Text="VER ELEMENTO SELECCIONADO"
+            Clicked="btnPicker_Clicked" />
+        <Label
+            x:Name="lblDatopk"
+            FontSize="18"
+            TextColor="Blue"/>
+
+        <DatePicker
+            x:Name="dpFecha"
+            Date="08/04/2024"
+            Format="dd/MM/yyyy"
+            
+            />
+        <Button
+            x:Name="btnFechas"
+            Text="VER FECHAS SELECCIONADA"
+            Clicked="btnFechas_Clicked"
+            />
+
+    </VerticalStackLayout>
+</ContentPage>
