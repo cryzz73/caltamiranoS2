@@ -25,6 +25,6 @@ public partial class vElementos : ContentPage
     private void btnFechas_Clicked(object sender, EventArgs e)
     {
         string fecha = dpFecha.Date.ToString();
-        lblDatopk.Text = "El dato seleccionado es: " + ;
+ lblDatopk.Text = "El dato seleccionado es: " +fecha;
     }
 }
